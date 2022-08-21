@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    --white10: #fff;
+    --white20: #A5A3A5;
+    --white30: #3A3539;
+    --brown: #251F24;
+    --black: #000000;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    background: var(--brown);
+    margin: 0;
+}
+body p{
+    color: var(--white20);
+}
+/* h1,h2,h3{
+    font-weight: normal;
+
+} */
+h1{
+    color: var(--white10);
+    font-size: 40px;
+    margin-block-start: 112px;
+    margin-block-end: 16px;
+}
+h2{
+    font-size: 2em;
+    color: var(--white10);
+    margin-block: 40px;
+}
+h3{
+    font-weight: 600;
+    margin-block:16px;
+}
+/* .header{
+    position: sticky;
+    inset-block-start: -40px;
+} */
+.header__content {
+    position: relative;
+    inset-block-start:65px ;
+    padding-inline:20px;
+}
+header li {
+    color: var(--white20);
+    margin-block-end: 16px;
+}
+header a{
+    color: var(--white20);
+    text-decoration: none;
+}
+nav details summary{
+    color: var(--white10);
+    margin-block-end: 16px;
+}
+header a li:hover{
+    color: #dd6f6f;
+}
+header nav details summary{
+    font-weight: bold;
+}
+pre{
+    background: var(--white30);
+    padding:40px;
+    color: var(--white10);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    margin-block-start: 16px;
+    overflow: auto;
+    border-radius: 8px;
+}
+hr{
+    border: 1px solid rgba(97, 97, 97, 0.2);
+    margin-block: 40px;
+}
+.hero{
+    background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+    block-size:50px;
+}
+::selection{
+    background: #928d8d;
+}
+
+.section-content h3{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--white10);
+    counter-increment: tittleList;
+    margin-block: 16px;
+}
+.section-content h3::before{
+    content: counter(tittleList, decimal)'. ';
+}
+.section-content img{
+    margin-block-start: 40px;
+    display: block;
+    max-inline-size: 100%;
+}
+blockquote{
+    margin-block-start: 80px;
+    margin-block-end: 63px;
+    border-radius:8px;
+    background: var(--white30);
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+    font-size:24px;
+    line-height: 32px;
+}
+blockquote p{
+    color: var(--white10);
+
+}
+blockquote p span::before{
+    content: "- ";
+}
+.main hr{
+    display:none;
+}
+body li{
+    color: var(--white20);
+}
+main{
+    /* border: 1px solid red; */
+    /* margin-inline-start: 503px; */
+}
+.wrapper{
+    /* border: 1px solid yellow; */
+    max-inline-size: 902px;
+    margin: auto;
+}
+.main__content{
+    padding-inline: 16px;
+   /*  border: 1px solid blue; */
+}
+.slider{
+
+}
+.slider-container{
+    /* block-size: 100px; */
+    display: block;
+    overflow:auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 0;
+}
+.video{
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    height:auto;
+    aspect-ratio: 16/9;
+}
+.slider-bullet-list{
+    text-align:center;
+    margin-block-start: 10px;
+}
+.slider-bullet{
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background:white;
+    border-radius: 50%;
+}
+.form input{ 
+    inline-size: 100%;
+    border: 1px solid var(--white10);
+    background: var(--brown);
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block: 12px;
+    color: var(--white10);
+    font-size: 16px;
+    display: block;
+    margin-block-end: 24px;
+}
+.form input::-webkit-input-placeholder{
+color: var(--white20);
+}
+.slider-container::-webkit-scrollbar {
+    display: none;
+}
+.form input[type="submit"]{
+    background-color: rgba(21, 126, 251, 1);
+    font-size: 16px;
+    font-weight:700;
+    border:none;
+}
+@media screen and (min-width: 1366px) {
+    header{
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: -208px;
+        inline-size: 188px;
+    }
+    .header{
+        position: sticky;
+        inset-block-start: -40px;
+    
+    }
+    .header__content {
+        position: relative;
+        inset-block-start: 85px;
+        padding-inline: 0;
+    }
+    .hero{
+    block-size:350px;
+    }
+    h1{
+        font-size: 60px;
+        margin-block-start: 64px;
+    }
+}
+
+
